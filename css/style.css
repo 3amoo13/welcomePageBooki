@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -23,6 +24,35 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 60px;
+    width: 100%;
+}
+ul.navigation{
+    display: flex;
+    list-style-type: none;
+    align-items: flex-start;
+    width: 200px;
+    justify-content: space-between;
+
+}
+
+li.navElement:hover{
+    color: #0066ff
+}
+#logo{    
+    height: 25px;
 }
 
 a {

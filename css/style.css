@@ -40,6 +40,10 @@ nav{
     width: 100%;
 }
 
+input{
+    text-align: center;
+}
+
 ul.navigation{
     display: flex;
     list-style-type: none;
@@ -52,13 +56,56 @@ ul.navigation{
 li.navElement:hover{
     color: #0066ff
 }
-div#searchBar{
+
+div#searchBarContainer{
     display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.searchItem{ 
+    box-sizing: border-box; /* Inclus les bordures et padding dans les 30px de height, sinon le button est plus petit que le reste de la searchBar*/ 
+    height: 45px;
+    border: 1px;
+    border-color: #f2f2f2;
+    border-style: solid;
+
 }
 
 i.fa-location-dot{
-    color:black;
+    display: flex;
+    align-items: center;
+    color: black;
 }
+
+.iconWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #f2f2f2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.searchBar{
+    width: 200px;
+}
+
+.submitButton{
+    background-color: #0066ff;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 130px;
+    font-size: medium;
+    font-weight: bold;
+    
+}
+
+
 
 #logo{    
     height: 25px;

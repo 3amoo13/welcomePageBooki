@@ -27,18 +27,16 @@
             </nav>
         </header>
         <main>
-            <div id= "searchBar">
-                <i class="fa-solid fa-location-dot"></i>
+            <div id= "searchBarContainer">
+                <span class="iconWrap"> 
+                    <i class="fa-solid fa-location-dot fa-lg searchItem"></i>
+                </span>
                 <form method="get" action="">
-                    <select name="pays" id="pays">
-                        <option value="Marseille">Marseille, France</option>
-                        <option value="Paris">Paris, France</option>
-                        <option value="Lyon">Lyon, France</option>
-                        <option value="Barcelone">Barcelone, Espagne</option>
-                    </select>
+                    <input name="ville" placeholder="Entrez votre destination" class="searchItem searchBar">
                 </form>
-                <button>Rechercher</button>
+                <button class="searchItem submitButton">Rechercher</button>
             </div>
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 

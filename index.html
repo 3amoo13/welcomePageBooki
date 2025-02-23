@@ -18,52 +18,57 @@
 <body>
     <div class="main-container">
         <header>
-            <img id="logo" src="/images/logo/Booki.png">
+            <img id="logo" src="/images/logo/Booki.png" alt="booki logo">
             <nav>
                 <ul class="navigation">
-                    <li class="navElement">Hébergements</li>
-                    <li class="navElement">Activités</li>
+                    <li class="nav-element"><a href="#hebergements">Hébergements</a></li>
+                    <li class="nav-element"><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="desc-conteneur">
-                <h1 class="descPage">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="descPage">En plein centre ville ou en pleine nature</p>
-            </div>
-            <div class= "searchBarContainer">
-                <span class="iconWrap"> 
-                    <i class="fa-solid fa-location-dot fa-lg searchItem"></i>
-                </span>
-                <form method="get" action="">
-                    <input name="ville" placeholder="Entrez votre destination" class="searchItem searchBar">
-                </form>
-                <button class="searchItem submitButton">Rechercher</button>
-            </div>
-
-            <div class="filterbar-conteneur">
-                <p id="filtres">Filtres</p>
-                <div class="filter">
-                    <i class="fa-solid fa-money-bill-wave fa-lg"></i>
-                    <p class="filterName">Economique</p>
+            <section class="recherche">
+                <div class="desc-conteneur">
+                    <h1 class="desc-page">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="desc-page">En plein centre ville ou en pleine nature</p>
                 </div>
-                <div class="filter">
-                    <i class="fa-solid fa-person fa-lg"></i>
-                    <p class="filterName">Familial</p>
+                <div class= "search-bar-container">
+                    <span class="icon-wrap"> 
+                        <i class="fa-solid fa-location-dot fa-lg search-item"></i>
+                    </span>
+                    <form method="get" action="">
+                        <input name="ville" placeholder="Entrez votre destination" class="search-item searchBar">
+                    </form>
+                    <button class="search-item submitButton desktop-icon">Rechercher</button>
+                    <button class="search-item submitButton mobile-icon"><i class="fa fa-search"></i></button>
                 </div>
-                <div class="filter">
-                    <i class="fa-solid fa-heart fa-lg"></i>
-                    <p class="filterName">Romantique</p>
+                <div class="filterbar-conteneur">
+                    <p id="filtres">Filtres</p>
+                    <div class="filter">
+                        <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                        <p class="filter-name">Economique</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-person fa-lg"></i>
+                        <p class="filter-name">Familial</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-heart fa-lg"></i>
+                        <p class="filter-name">Romantique</p>
+                    </div>
+                    <div class="filter">
+                        <i class="fa-solid fa-fire fa-lg"></i>
+                        <p class="filter-name">Nos pépites</p>
+                    </div>
                 </div>
-                <div class="filter">
-                    <i class="fa-solid fa-fire fa-lg"></i>
-                    <p class="filterName">Nos pépites</p>
+                <div class="info-logements-dispo">
+                    <i class="fa-solid fa-info fa-xs icon"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
-            </div>
-            
+            </section>
 
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
@@ -252,28 +257,28 @@
                     </div>
                 </section>
             </div>
-            <section class="activites">
+            <section class="activites" id="activites">
                 <h2 class="section-title">Activités à Marseille</h2>
                 <div class="activites-cards">
-                    <article class="card"> <!-- Activité 1-->
+                    <article class="card card-activities"> <!-- Activité 1-->
                         <a href="#">
                             <img src="/images/activites/reno-laithienne.jpg" alt="bateaux sur le port de marseille">
                             <h3 class="card-text">Vieux-Port</h3>
                         </a>
                     </article>
-                    <article class="card"> <!-- Activité 2-->
+                    <article class="card card-activities"> <!-- Activité 2-->
                         <a href="#">
                             <img src="/images/activites/paul-hermann.jpg" alt="vue en contrebas du fort">
                             <h3 class="card-text">Fort de Pomègues</h3>
                         </a>
                     </article>
-                    <article class="card"> <!-- Activité 3-->
+                    <article class="card card-activities"> <!-- Activité 3-->
                         <a href="#">
                             <img src="/images/activites/kilyan-sockalingum.jpg" alt="belle vue des calanques">
                             <h3 class="card-text">Parc national des Calanques</h3>
                         </a>
                     </article>
-                    <article class="card"> <!-- Activité 4-->
+                    <article class="card card-activities"> <!-- Activité 4-->
                         <a href="#">
                             <img src="/images/activites/florian-wehde.jpg" alt="notre dame au loin">
                             <h3 class="card-text">Notre-Dame-de-la-Garde</h3>

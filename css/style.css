@@ -22,11 +22,12 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
 
-h1.descPage{
+h1.desc-page{
     font-size: 1.5em;
     margin-block-start: 0px;
     margin-block-end: 0px; 
@@ -81,6 +82,7 @@ header{
     display: flex;
     align-items: center;
     height: 60px;
+    margin-bottom: 30px;
     
 }
 
@@ -97,12 +99,17 @@ header{
 
 }
 
-li.navElement:hover{
-    color: #0066ff
+li.nav-element{
+    padding-top: 15px;
+}
+
+li.nav-element:hover{
+    color: #0066ff;
+    border-top: 3px #0065FC solid;
+
 }
 
 nav{
-    margin-top: 32px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -113,17 +120,20 @@ nav{
 
 
 /**************** Barre de recherche ******************/
+.mobile-icon {
+    display: none;
+  }
 
 input.searchBar{
     text-align: center;
 }
 
-.searchBarContainer{
+.search-bar-container{
     display: flex;
     width: 100%;
 }
 
-.searchItem{ 
+.search-item{ 
     box-sizing: border-box; /* Inclus les bordures et padding dans les 30px de height, sinon le button est plus petit que le reste de la searchBar*/ 
     height: 45px;
     border: 1px;
@@ -138,7 +148,7 @@ i.fa-location-dot{
     color: black;
 }
 
-.iconWrap{
+.icon-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,10 +213,32 @@ i.fa-location-dot{
     background-color: #DEEBFF ;
 }
 
-.filterName{
+.filter-name{
     margin-block-start: 5px;
     margin-block-end: 5px;
     margin-left: 10px;
+}
+
+.info-logements-dispo{
+    display: flex;
+    align-items: center;
+
+}
+
+.info-logements-dispo .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;   
+    border-color: #f2f2f2;
+    border-style: solid;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    
+
 }
 
 /****** Hebergements And Populaires ***********/
@@ -234,9 +266,7 @@ i.fa-location-dot{
 .hebergements-cards{
     display: flex;
     justify-content: space-between;
-    display: row;
     flex-wrap: wrap;
-
 }
 
 .hebergements-cards img{
@@ -348,9 +378,10 @@ i.fa-location-dot{
     height: 10%;
 }
 
-.activites .card{
+.card-activities{
     width: 22%;
     height: 450px;
+    margin-bottom: 20px;
 }
 
 .activites img{
@@ -430,27 +461,51 @@ li.title{
         padding-left: 20px;
     }
 
+    .desktop-icon{
+        display: none;
+    }
+
+    .mobile-icon {
+        display: inline-block;
+      }
+
     header{
         flex-direction: column;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     nav{
-        justify-content: space-around;
-        width: 85%;
+        justify-content: flex-start;
+        margin-top: 20px;
+        width: 100vw;
+        box-sizing: border-box
     }
 
     .navigation{
         width:100%;
+        
     
     }
 
-    #logo {
-        margin-top: 30px;
+    .nav-element{
+        width: 50%;
+        border-bottom: 1px solid #F2F2F2;
+        padding-bottom: 15px;
+        text-align: center;
+        
     }
 
-    .navElement{
-        margin-bottom: 10px;
+    li.nav-element:hover{
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+        }
+        
+
+
+    #logo {
+        margin-top: 30px;
     }
 
     .box{
@@ -502,6 +557,10 @@ li.title{
         width: 100%;
     }
 
+    .populaires{
+        margin-bottom: 30px;
+    }
+
     .activites-cards{
         flex-direction: column;
     }
@@ -515,6 +574,14 @@ li.title{
         height: 75%;
     }
 
+    .activites-cards .card h3{
+        height: 20%;
+    }
+
+    .card-activities{
+        box-sizing: border-box;
+    }
+
     footer{
         flex-direction: column;
     }
@@ -523,5 +590,28 @@ li.title{
         width: 100%;
         margin-left: -20px;
     }
+
+    .filter-name{
+        box-sizing: border-box;
+        font-size: 14px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-left: 10px;
+    }
     
+    .filter{
+        padding: 0px 10px 0px 0px;
+        justify-content: flex-start;
+    }
+
+    .filter i{
+        padding-left: 20px;
+    }
+
+    .filter .fa-person{
+        padding-left: 23px
+    }
+
 }
